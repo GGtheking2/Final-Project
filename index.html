@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.0/cdn/themes/light.css"
+    />
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.0/cdn/shoelace-autoloader.js"
+    ></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-stone-900">
+    <header class="text-white bg-black p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="flex items-center">
+          <img src="logo.png" alt="codepen logo" width="200px" />
+          <div>
+            <span class="px-2 text-xs text-amber-300">EXPLORE</span>
+            <nav>
+              <a href="#" class="text-white px-2">Pens</a>
+              <a href="#" class="text-white px-2">Posts</a>
+              <a href="#" class="text-white px-2">Collections</a>
+              <a href="#" class="text-gray-500 text-sm pl-4">
+                Spark
+                <sl-icon
+                  slot="suffix"
+                  name="chevron-down"
+                  class="text-white"
+                ></sl-icon>
+              </a>
+            </nav>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <button class="p-4 bg-zinc-800 rounded">
+            Create
+            <sl-icon
+              slot="suffix"
+              name="chevron-down"
+              class="text-green-500"
+            ></sl-icon>
+          </button>
+          <sl-icon-button
+            name="search"
+            label="Search"
+            style="font-size: 2.5rem"
+          ></sl-icon-button>
+          <button class="p-4 bg-zinc-800 rounded">Login</button>
+          <button class="p-4 bg-zinc-800 rounded">Sign Up</button>
+        </div>
+      </div>
+    </header>
+    <main
+      class="pt-10 bg-gray-700 text-white bg-gradient-to-r from-stone-600 to-black"
+    >
+      <div class="flex pb-2">
+        <section class="px-8">
+          <h2 class="text-4xl text-gray-400 mb-4">
+            CodePen is a
+            <span class="font-bold text-white"
+              >social development environment</span
+            >
+            for front-end designers and developers. 👋
+          </h2>
+          <p class="mb-8 text-3xl text-gray-400 pt-16 pb-16">
+            It’s the best place to build and deploy a website, show off your
+            work, build test cases, and find inspiration.
+          </p>
+          <button
+            class="btn bg-green-500 py-4 px-8 rounded text-2xl text-black"
+          >
+            Sign Up for Free
+          </button>
+          <button class="btn btn-learn bg-black py-4 px-8 rounded text-2xl">
+            <padding> </padding>
+            Learn More
+          </button>
+        </section>
+        <section>
+          <div>This is <span class="text-cyan-400">CodePen Project</span>!</div>
+          <img src="./code.png" alt="code pen screenshot" />
+        </section>
+      </div>
+      <div class="bg-zinc-800 grid grid-cols-4">
+        <div
+          class="p-8 text-center border-solid border-y-2 border-l-2 border-r border-neutral-600"
+        >
+          CodePen for <span class="text-2xl font-serif">TEAMS</span>
+        </div>
+        <div
+          class="p-8 text-center border-solid border-y-2 border-x border-neutral-600"
+        >
+          CodePen for <span class="text-2xl font-serif">EDUCATION</span>
+        </div>
+        <div
+          class="p-8 text-center border-solid border-y-2 border-x border-neutral-600"
+        >
+          CodePen for <span class="text-2xl font-serif">PRIVACY</span>
+        </div>
+        <div
+          class="p-8 text-center border-solid border-y-2 border-r-2 border-neutral-600"
+        >
+          CodePen for <span class="text-2xl font-serif">WRIGHTING</span>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
